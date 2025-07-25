@@ -2,7 +2,10 @@ extends CharacterBody2D
 const SPEED = 300;
 const JUMP_VELOCITY = -400;
 @onready var CAMERAVIEWSIZE = get_viewport().size.y
-@onready var CAMERA: Camera2D = $Camera2D
+@onready var CAMERA: Camera2D = $Camera2D #Camera
+
+func _ready() -> void:
+	CAMERA.zoom = Vector2(0.5,0.5)
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _physics_process(delta):
@@ -17,7 +20,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	move_and_slide()
 		
-	
-	CAMERA.drag_vertical_offset = CAMERAVIEWSIZE
-	#print(CAMERAVIEWSIZE*0.33)
-	print(get_global_mouse_position())
+	#Camera
+	CAMERA.offset = Vector2(0,-CAMERAVIEWSIZE/3)
+	#print(-CAMERAVIEWSIZE/3)
+	#print(get_global_mouse_position())
