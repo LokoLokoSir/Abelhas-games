@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbududnj3fr6c"]
+
+[ext_resource type="Texture2D" uid="uid://e8hblra76xqv" path="res://icon.svg" id="1_q1pd5"]
+[ext_resource type="Script" uid="uid://brtnylmhyrox6" path="res://character_body_2d.gd" id="1_y47sr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q1pd5"]
+size = Vector2(123.664, 123.866)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y47sr"]
+size = Vector2(1076.7, 30.2246)
+
+[node name="Cena" type="Node2D"]
+scale = Vector2(1.01081, 1.0253)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(185.99, 205.793)
+scale = Vector2(1.05233, 0.981565)
+script = ExtResource("1_y47sr")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(1.09483, 0.935496)
+texture = ExtResource("1_q1pd5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0.494653, 0)
+shape = SubResource("RectangleShape2D_q1pd5")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="Chao" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao"]
+position = Vector2(601.386, 560.324)
+scale = Vector2(1.0785, -4.22727)
+shape = SubResource("RectangleShape2D_y47sr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Chao"]
+position = Vector2(599.5, 559)
+scale = Vector2(9.05469, 1)
+texture = ExtResource("1_q1pd5")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(1262.35, -357.944)
+texture = ExtResource("1_q1pd5")
