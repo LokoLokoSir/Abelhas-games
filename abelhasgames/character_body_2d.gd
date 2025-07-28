@@ -14,7 +14,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("Espaco") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 	var direction = Input.get_axis("A", "D")
-	if direction:
+	if direction != 0:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
