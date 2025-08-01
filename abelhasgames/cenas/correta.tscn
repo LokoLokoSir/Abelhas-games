@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://das4qid2716wy"]
+
+[ext_resource type="Texture2D" uid="uid://bijwowedf1gli" path="res://Untitled-1.png" id="1_3sf31"]
+
+[node name="Correta" type="Node2D"]
+
+[node name="Untitled-1" type="Sprite2D" parent="."]
+position = Vector2(335, 151)
+rotation = -3.14159
+scale = Vector2(0.0791612, 0.0791612)
+texture = ExtResource("1_3sf31")

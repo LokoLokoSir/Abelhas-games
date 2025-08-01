@@ -1,3 +1,45 @@
-[gd_scene format=3 uid="uid://dxuqnb1bviimr"]
+[gd_scene load_steps=4 format=3 uid="uid://dxuqnb1bviimr"]
+
+[ext_resource type="PackedScene" uid="uid://cmr3844g1ecil" path="res://cenas/player.tscn" id="1_mtgg2"]
+[ext_resource type="Texture2D" uid="uid://bijwowedf1gli" path="res://Untitled-1.png" id="2_t4ukd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtgg2"]
+size = Vector2(20, 47)
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_mtgg2")]
+position = Vector2(822, 442)
+
+[node name="Porta" type="Area2D" parent="." groups=["1"]]
+position = Vector2(9, 571)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Porta"]
+shape = SubResource("RectangleShape2D_mtgg2")
+
+[node name="Untitled-1" type="Sprite2D" parent="Porta"]
+scale = Vector2(0.00912036, 0.00912036)
+texture = ExtResource("2_t4ukd")
+
+[node name="Porta2" type="Area2D" parent="." groups=["2"]]
+position = Vector2(9, 442)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Porta2"]
+shape = SubResource("RectangleShape2D_mtgg2")
+
+[node name="Untitled-1" type="Sprite2D" parent="Porta2"]
+scale = Vector2(0.00912036, 0.00912036)
+texture = ExtResource("2_t4ukd")
+
+[node name="Porta3" type="Area2D" parent="." groups=["3"]]
+position = Vector2(9, 304)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Porta3"]
+shape = SubResource("RectangleShape2D_mtgg2")
+
+[node name="Untitled-1" type="Sprite2D" parent="Porta3"]
+scale = Vector2(0.00912036, 0.00912036)
+texture = ExtResource("2_t4ukd")
