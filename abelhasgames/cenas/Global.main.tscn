@@ -1,12 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://bbududnj3fr6c"]
+[gd_scene load_steps=11 format=3 uid="uid://bbududnj3fr6c"]
 
-[ext_resource type="Script" uid="uid://yctvgv3sycr" path="res://cenas/player.gd" id="1_aoc0o"]
+[ext_resource type="Script" path="res://cenas/player.gd" id="1_aoc0o"]
 [ext_resource type="Texture2D" uid="uid://e8hblra76xqv" path="res://icon.svg" id="1_q1pd5"]
-[ext_resource type="Script" uid="uid://brtnylmhyrox6" path="res://character_body_2d.gd" id="1_y47sr"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_y47sr"]
 [ext_resource type="Texture2D" uid="uid://d0oc5yob0y6vi" path="res://Sprites/Sem título.png" id="2_6i0ce"]
 [ext_resource type="Texture2D" uid="uid://bgbtkwxm0a2uh" path="res://Sprites/images.png" id="3_53ko3"]
-[ext_resource type="Script" uid="uid://nggbrjaaflvr" path="res://cenas/sprite_2d.gd" id="4_aerhe"]
+[ext_resource type="Script" path="res://cenas/sprite_2d.gd" id="4_aerhe"]
 [ext_resource type="Texture2D" uid="uid://bjo1n31mvt2o6" path="res://Sprites/pngtree-trees-support-life-png-image_19782547.png" id="5_aerhe"]
+[ext_resource type="Texture2D" uid="uid://bijwowedf1gli" path="res://Untitled-1.png" id="8_dg7v8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q1pd5"]
 size = Vector2(123.664, 123.866)
@@ -64,3 +65,7 @@ texture = ExtResource("5_aerhe")
 position = Vector2(-2611.78, 227.461)
 scale = Vector2(0.604276, 0.570858)
 texture = ExtResource("5_aerhe")
+
+[node name="Untitled-1" type="Sprite2D" parent="."]
+position = Vector2(-2090.4, 401.834)
+texture = ExtResource("8_dg7v8")
