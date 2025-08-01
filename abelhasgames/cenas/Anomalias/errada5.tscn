@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmkijcxe1wav"]
+
+[ext_resource type="Texture2D" uid="uid://bijwowedf1gli" path="res://imagens/Untitled-1.png" id="1_ffqu2"]
+
+[node name="Errada2" type="Node2D"]
+
+[node name="Untitled-3" type="Sprite2D" parent="."]
+position = Vector2(581, 318)
+rotation = 0.824779
+scale = Vector2(0.121527, 0.123759)
+texture = ExtResource("1_ffqu2")
+
+[node name="Untitled-4" type="Sprite2D" parent="."]
+position = Vector2(927, 330)
+rotation = 0.824779
+scale = Vector2(0.121527, 0.123759)
+texture = ExtResource("1_ffqu2")
+
+[node name="Untitled-5" type="Sprite2D" parent="."]
+position = Vector2(183, 315)
+rotation = 0.824779
+scale = Vector2(0.121527, 0.123759)
+texture = ExtResource("1_ffqu2")

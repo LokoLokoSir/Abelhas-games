@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxuqnb1bviimr"]
+
+[ext_resource type="Script" uid="uid://bqc02kem02mrw" path="res://scripts/Fase.gd" id="1_g0ob1"]
+[ext_resource type="PackedScene" uid="uid://cmr3844g1ecil" path="res://cenas/player.tscn" id="2_s22ki"]
+[ext_resource type="PackedScene" uid="uid://dtcts7h58crwl" path="res://cenas/porta.tscn" id="3_6e28g"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_g0ob1")
+
+[node name="Player" parent="." instance=ExtResource("2_s22ki")]
+position = Vector2(822, 442)
+
+[node name="Portas" type="Node" parent="."]
+
+[node name="Porta" parent="Portas" groups=["1"] instance=ExtResource("3_6e28g")]
+position = Vector2(9, 571)
+
+[node name="Porta2" parent="Portas" groups=["2"] instance=ExtResource("3_6e28g")]
+position = Vector2(9, 429)
+
+[node name="Porta3" parent="Portas" groups=["3"] instance=ExtResource("3_6e28g")]
+position = Vector2(9, 287)
+
+[node name="Porta4" parent="Portas" groups=["4"] instance=ExtResource("3_6e28g")]
+position = Vector2(9, 140)
+
+[node name="Porta5" parent="Portas" groups=["5"] instance=ExtResource("3_6e28g")]
+position = Vector2(195, 571)
+
+[node name="Porta6" parent="Portas" groups=["6"] instance=ExtResource("3_6e28g")]
+position = Vector2(195, 429)
+
+[node name="Porta7" parent="Portas" groups=["7"] instance=ExtResource("3_6e28g")]
+position = Vector2(195, 287)
+
+[node name="Porta8" parent="Portas" groups=["8"] instance=ExtResource("3_6e28g")]
+position = Vector2(195, 140)

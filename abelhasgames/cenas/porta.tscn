@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtcts7h58crwl"]
+
+[ext_resource type="Script" uid="uid://l1rba8mj28n5" path="res://scripts/Portas.gd" id="1_scu1g"]
+[ext_resource type="Texture2D" uid="uid://bijwowedf1gli" path="res://imagens/Untitled-1.png" id="2_jiw3h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtgg2"]
+size = Vector2(20, 47)
+
+[node name="Porta" type="Area2D"]
+script = ExtResource("1_scu1g")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mtgg2")
+
+[node name="Untitled-1" type="Sprite2D" parent="."]
+scale = Vector2(0.00912036, 0.00912036)
+texture = ExtResource("2_jiw3h")

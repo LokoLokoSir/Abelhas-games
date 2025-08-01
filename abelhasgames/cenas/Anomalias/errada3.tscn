@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2mpcbfqs3bv4"]
+
+[ext_resource type="Texture2D" uid="uid://bijwowedf1gli" path="res://imagens/Untitled-1.png" id="1_5j15p"]
+
+[node name="Errada2" type="Node2D"]
+
+[node name="Untitled-1" type="Sprite2D" parent="."]
+position = Vector2(-46, 519)
+scale = Vector2(0.539906, 1)
+texture = ExtResource("1_5j15p")
+
+[node name="Untitled-2" type="Sprite2D" parent="."]
+position = Vector2(1297, 526)
+scale = Vector2(0.571596, 1)
+texture = ExtResource("1_5j15p")
+
+[node name="Untitled-3" type="Sprite2D" parent="."]
+position = Vector2(581, 318)
+scale = Vector2(0.121527, 0.123759)
+texture = ExtResource("1_5j15p")

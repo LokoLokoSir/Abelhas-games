@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://opydenr8s3dp"]
+
+[ext_resource type="Texture2D" uid="uid://cgimbqsfp3u6u" path="res://imagens/667410c14b688da206f46bcc8b4271e0.jpg" id="1_rqo3h"]
+
+[node name="Errada2" type="Node2D"]
+
+[node name="667410c14b688Da206f46Bcc8b4271e0" type="Sprite2D" parent="."]
+position = Vector2(581, 347)
+texture = ExtResource("1_rqo3h")
